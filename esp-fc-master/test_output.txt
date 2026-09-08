@@ -1,0 +1,2368 @@
+﻿Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+Verbosity level can be increased via `-v, -vv, or -vvv` option
+Collected 8 tests
+
+Processing test_ahrs in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+Testing...
+test\test_ahrs\test_ahrs.cpp:522: test_rtqf_zero_error_stable	[PASSED]
+test\test_ahrs\test_ahrs.cpp:523: test_rtqf_level_converges	[PASSED]
+test\test_ahrs\test_ahrs.cpp:524: test_rtqf_roll_tracks	[PASSED]
+test\test_ahrs\test_ahrs.cpp:525: test_rtqf_pitch_tracks	[PASSED]
+test\test_ahrs\test_ahrs.cpp:526: test_rtqf_stays_normalized_under_motion	[PASSED]
+test\test_ahrs\test_ahrs.cpp:528: test_madgwick_level_converges	[PASSED]
+test\test_ahrs\test_ahrs.cpp:529: test_madgwick_roll_converges	[PASSED]
+test\test_ahrs\test_ahrs.cpp:531: test_mahony_level_converges	[PASSED]
+test\test_ahrs\test_ahrs.cpp:532: test_mahony_pitch_converges	[PASSED]
+test\test_ahrs\test_ahrs.cpp:534: test_complementary_follows_position	[PASSED]
+test\test_ahrs\test_ahrs.cpp:535: test_complementary_integrates_rate	[PASSED]
+test\test_ahrs\test_ahrs.cpp:536: test_complementary_initial_state	[PASSED]
+test\test_ahrs\test_ahrs.cpp:538: test_kalman_tracks_static_angle	[PASSED]
+test\test_ahrs\test_ahrs.cpp:539: test_kalman_rejects_bias	[PASSED]
+test\test_ahrs\test_ahrs.cpp:541: test_quaternion_product_identity	[PASSED]
+test\test_ahrs\test_ahrs.cpp:542: test_quaternion_product_compose	[PASSED]
+test\test_ahrs\test_ahrs.cpp:543: test_quaternion_conjugate_inverse	[PASSED]
+test\test_ahrs\test_ahrs.cpp:544: test_quaternion_normalize	[PASSED]
+test\test_ahrs\test_ahrs.cpp:545: test_quaternion_dot_and_sign	[PASSED]
+test\test_ahrs\test_ahrs.cpp:546: test_quaternion_lerp_endpoints_and_mid	[PASSED]
+test\test_ahrs\test_ahrs.cpp:547: test_quaternion_slerp_midpoint	[PASSED]
+test\test_ahrs\test_ahrs.cpp:548: test_quaternion_slerp_shortest_path	[PASSED]
+test\test_ahrs\test_ahrs.cpp:549: test_quaternion_angle_vector_roundtrip	[PASSED]
+test\test_ahrs\test_ahrs.cpp:551: test_vector_magnitude_normalize	[PASSED]
+test\test_ahrs\test_ahrs.cpp:552: test_vector_dot_cross	[PASSED]
+test\test_ahrs\test_ahrs.cpp:553: test_vector_rotate_z90	[PASSED]
+test\test_ahrs\test_ahrs.cpp:554: test_vector_rotate_identity_preserves	[PASSED]
+test\test_ahrs\test_ahrs.cpp:555: test_vector_accel_to_euler	[PASSED]
+test\test_ahrs\test_ahrs.cpp:556: test_vector_euler_quaternion_roundtrip	[PASSED]
+test\test_ahrs\test_ahrs.cpp:557: test_vector_accel_to_quaternion_level	[PASSED]
+test\test_ahrs\test_ahrs.cpp:558: test_vector_shortest_arc_maps_dst_to_src	[PASSED]
+----------------- native:test_ahrs [PASSED] Took 5.03 seconds -----------------
+
+Processing test_esc in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+Testing...
+test\test_esc\test_esc.cpp:253: test_esc_dshot_encode	[PASSED]
+test\test_esc\test_esc.cpp:254: test_esc_dshot_encode_inverted	[PASSED]
+test\test_esc\test_esc.cpp:255: test_esc_dshot_convert	[PASSED]
+test\test_esc\test_esc.cpp:256: test_esc_gcr_to_raw_value	[PASSED]
+test\test_esc\test_esc.cpp:257: test_esc_gcr_convert_to_value	[PASSED]
+test\test_esc\test_esc.cpp:258: test_esc_gcr_convert_to_erpm	[PASSED]
+test\test_esc\test_esc.cpp:259: test_esc_duration_to_bitlen	[PASSED]
+test\test_esc\test_esc.cpp:260: test_esc_extract_telemetry_gcr_synth	[PASSED]
+test\test_esc\test_esc.cpp:261: test_esc_extract_telemetry_gcr_synth_idle	[PASSED]
+test\test_esc\test_esc.cpp:262: test_esc_extract_telemetry_dshot300_sample	[PASSED]
+test\test_esc\test_esc.cpp:263: test_esc_extract_telemetry_dshot300_running	[PASSED]
+test\test_esc\test_esc.cpp:264: test_esc_extract_telemetry_dshot300_idle	[PASSED]
+------------------ native:test_esc [PASSED] Took 5.66 seconds ------------------
+
+Processing test_fc in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+pio : In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+At line:2 char:95
++ ... -fc-master_final-main\esp-fc-master"; pio test -e native 2>&1 | Out-F ...
++                                           ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...inoFake.h:12:0,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                 from test\test_fc\test_fc.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from test\test_fc\test_fc.cpp:2:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+In file included from lib\Gps\src/Gps.hpp:3:0,
+                 from test\test_fc\test_fc.cpp:8:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from test\test_fc\test_fc.cpp:8:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+test\test_fc\test_fc.cpp: In function 'void test_mixer_output_limit_motor()':
+test\test_fc\test_fc.cpp:586:48: sorry, unimplemented: non-trivial designated initializers not supported
+   OutputChannelConfig motor = { .servo = false };
+                                                ^
+test\test_fc\test_fc.cpp: In function 'void test_mixer_output_limit_servo()':
+test\test_fc\test_fc.cpp:613:48: sorry, unimplemented: non-trivial designated initializers not supported
+   OutputChannelConfig servo = { .servo = true  };
+                                                ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\betaflight\src\platform_cpp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+ }};
+  ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+ };
+ ^
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Blackbox\Blackbox.h:3,
+                 from lib\Espfc\src\Blackbox\Blackbox.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Blackbox\BlackboxBridge.h:3,
+                 from lib\Espfc\src\Blackbox\BlackboxBridge.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Blackbox\BlackboxFlashfs.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\test\test_fc\test_fc.o] Error 1
+*** [.pio\build\native\lib00b\betaflight\platform_cpp.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Connect\Buzzer.hpp:3,
+                 from lib\Espfc\src\Connect\Buzzer.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/arduino/WString.h:25:0,
+                 from .pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:224,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+lib\Espfc\src\Connect\Cli.cpp: In member function 'int32_t Espfc::Connect::Cli::Param::parse(const char*) const':
+.pio\libdeps\native\ArduinoFake\src/arduino/pgmspace.h:64:51: error: 'strcasecmp' was not declared in this scope
+ #define strcasecmp_P(s1, s2) strcasecmp((s1), (s2))
+                                                   ^
+lib\Espfc\src\Connect\Cli.cpp:311:10: note: in expansion of macro 'strcasecmp_P'
+       if(strcasecmp_P(v, choices[i]) == 0) return i;
+          ^~~~~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/MspProcessor.hpp:3,
+                 from lib\Espfc\src\Connect\MspProcessor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\Espfc\src\Connect\Vtx.hpp:3,
+                 from lib\Espfc\src\Connect\Vtx.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Connect\Cli.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Actuator.h:3,
+                 from lib\Espfc\src\Control\Actuator.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Fusion.h:3,
+                 from lib\Espfc\src\Control\Fusion.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+lib\Espfc\src\Control\Controller.cpp: In member function 'float 
+Espfc::Control::Controller::applyFeedforwardJitter(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src\Control\Controller.cpp:439:11: note: in expansion of macro 'abs'
+   if(std::abs(delta) > maxDelta)
+           ^~~
+*** [.pio\build\native\lib6f5\Espfc\Control\Controller.o] Error 1
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+----------------- native:test_fc [ERRORED] Took 10.56 seconds -----------------
+
+Processing test_gps in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+In file included from lib\Gps\src/Gps.hpp:3:0,
+                 from test\test_gps\test_gps.cpp:7:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from test\test_gps\test_gps.cpp:7:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+test\test_gps\test_gps.cpp: In function 'constexpr float toRad(float)':
+test\test_gps\test_gps.cpp:12:63: error: 'M_PI' was not declared in this scope
+ static constexpr float toRad(float deg) { return deg * (float)M_PI / 180.0f; }
+                                                               ^~~~
+test\test_gps\test_gps.cpp: In function 'void test_distance_north()':
+test\test_gps\test_gps.cpp:19:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 1000000, 0);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:20:44: error: 'distance' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(1.0f, 11130.0f, distance);
+                                            ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:20:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(1.0f, 11130.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:20:44: note: suggested alternative:
+   TEST_ASSERT_FLOAT_WITHIN(1.0f, 11130.0f, distance);
+                                            ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:20:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(1.0f, 11130.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:61,
+                 from lib\Gps\src/GpsProtocol.hpp:6,
+                 from lib\Gps\src/Gps.hpp:3,
+                 from test\test_gps\test_gps.cpp:7:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_distance_zero_at_same_position()':
+test\test_gps\test_gps.cpp:25:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(377490000, -1224194000, 377490000, -1224194000);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:26:33: error: 'distance' was not declared in this scope
+   TEST_ASSERT_EQUAL_FLOAT(0.0f, distance);
+                                 ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+.pio\libdeps\native\Unity\src/unity.h:352:100: note: in expansion of macro 'UNITY_TEST_ASSERT_EQUAL_FLOAT'
+ #define TEST_ASSERT_EQUAL_FLOAT(expected, actual)                                                  
+UNITY_TEST_ASSERT_EQUAL_FLOAT((expected), (actual), __LINE__, NULL)
+                                                                                                    
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:26:3: note: in expansion of macro 'TEST_ASSERT_EQUAL_FLOAT'
+   TEST_ASSERT_EQUAL_FLOAT(0.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:26:33: note: suggested alternative:
+   TEST_ASSERT_EQUAL_FLOAT(0.0f, distance);
+                                 ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+.pio\libdeps\native\Unity\src/unity.h:352:100: note: in expansion of macro 'UNITY_TEST_ASSERT_EQUAL_FLOAT'
+ #define TEST_ASSERT_EQUAL_FLOAT(expected, actual)                                                  
+UNITY_TEST_ASSERT_EQUAL_FLOAT((expected), (actual), __LINE__, NULL)
+                                                                                                    
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:26:3: note: in expansion of macro 'TEST_ASSERT_EQUAL_FLOAT'
+   TEST_ASSERT_EQUAL_FLOAT(0.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:61,
+                 from lib\Gps\src/GpsProtocol.hpp:6,
+                 from lib\Gps\src/Gps.hpp:3,
+                 from test\test_gps\test_gps.cpp:7:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_north()':
+test\test_gps\test_gps.cpp:31:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 10000000, 0);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:32:41: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, 0.0f, bearing);
+                                         ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:32:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, 0.0f, bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_east()':
+test\test_gps\test_gps.cpp:37:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 0, 10000000);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:38:49: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(90.0f), bearing);
+                                                 ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:38:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(90.0f), bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_south()':
+test\test_gps\test_gps.cpp:43:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, -10000000, 0);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:44:50: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(180.0f), bearing);
+                                                  ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:44:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(180.0f), bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_west()':
+test\test_gps\test_gps.cpp:49:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 0, -10000000);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:50:50: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(270.0f), bearing);
+                                                  ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:50:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(270.0f), bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_northeast()':
+test\test_gps\test_gps.cpp:55:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 10000000, 10000000);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:56:49: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(45.0f), bearing);
+                                                 ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:56:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(45.0f), bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_bearing_wraps_360()':
+test\test_gps\test_gps.cpp:62:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, 0, 0, -5000000);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:63:20: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_TRUE(bearing >= 0.0f && bearing <= 2.0f * M_PI);
+                    ^
+.pio\libdeps\native\Unity\src/unity_internals.h:891:107: note: in definition of macro 'UNITY_TEST_ASSERT'
+ #define UNITY_TEST_ASSERT(condition, line, message)                                              do { if (condition) 
+{ /* nothing*/ } else { UNITY_TEST_FAIL((line), (message)); } } while (0)
+                                                                                                           ^~~~~~~~~
+test\test_gps\test_gps.cpp:63:3: note: in expansion of macro 'TEST_ASSERT_TRUE'
+   TEST_ASSERT_TRUE(bearing >= 0.0f && bearing <= 2.0f * M_PI);
+   ^~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:63:57: error: 'M_PI' was not declared in this scope
+   TEST_ASSERT_TRUE(bearing >= 0.0f && bearing <= 2.0f * M_PI);
+                                                         ^
+.pio\libdeps\native\Unity\src/unity_internals.h:891:107: note: in definition of macro 'UNITY_TEST_ASSERT'
+ #define UNITY_TEST_ASSERT(condition, line, message)                                              do { if (condition) 
+{ /* nothing*/ } else { UNITY_TEST_FAIL((line), (message)); } } while (0)
+                                                                                                           ^~~~~~~~~
+test\test_gps\test_gps.cpp:63:3: note: in expansion of macro 'TEST_ASSERT_TRUE'
+   TEST_ASSERT_TRUE(bearing >= 0.0f && bearing <= 2.0f * M_PI);
+   ^~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_date_line_crossing_east_to_west()':
+test\test_gps\test_gps.cpp:74:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, homeLon, 0, curLon);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:77:47: error: 'distance' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+                                               ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:77:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:77:47: note: suggested alternative:
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+                                               ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:77:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:61,
+                 from lib\Gps\src/GpsProtocol.hpp:6,
+                 from lib\Gps\src/Gps.hpp:3,
+                 from test\test_gps\test_gps.cpp:7:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_date_line_crossing_west_to_east()':
+test\test_gps\test_gps.cpp:86:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, homeLon, 0, curLon);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:88:47: error: 'distance' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+                                               ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:88:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+test\test_gps\test_gps.cpp:88:47: note: suggested alternative:
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+                                               ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:88:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(100.0f, 222600.0f, distance);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:61,
+                 from lib\Gps\src/GpsProtocol.hpp:6,
+                 from lib\Gps\src/Gps.hpp:3,
+                 from test\test_gps\test_gps.cpp:7:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+test\test_gps\test_gps.cpp: In function 'void test_date_line_crossing_bearing()':
+test\test_gps\test_gps.cpp:98:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(0, homeLon, 0, curLon);
+              ^
+In file included from .pio\libdeps\native\Unity\src/unity.h:22:0,
+                 from test\test_gps\test_gps.cpp:4:
+test\test_gps\test_gps.cpp:100:50: error: 'bearing' was not declared in this scope
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(270.0f), bearing);
+                                                  ^
+.pio\libdeps\native\Unity\src/unity_internals.h:1119:183: note: in definition of macro 'UNITY_TEST_ASSERT_FLOAT_WITHIN'
+ #define UNITY_TEST_ASSERT_FLOAT_WITHIN(delta, expected, actual, line, message)                   
+UnityAssertFloatsWithin((UNITY_FLOAT)(delta), (UNITY_FLOAT)(expected), (UNITY_FLOAT)(actual), (message), 
+(UNITY_LINE_TYPE)(line))
+                                                                                                                       
+                                                                ^~~~~~
+test\test_gps\test_gps.cpp:100:3: note: in expansion of macro 'TEST_ASSERT_FLOAT_WITHIN'
+   TEST_ASSERT_FLOAT_WITHIN(0.01f, toRad(270.0f), bearing);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+*** [.pio\build\native\test\test_gps\test_gps.o] Error 1
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+----------------- native:test_gps [ERRORED] Took 2.37 seconds -----------------
+
+Processing test_gyro in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\betaflight\src\platform_cpp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+ }};
+  ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+ };
+ ^
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/arduino/WString.h:25:0,
+                 from .pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:224,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+lib\Espfc\src\Connect\Cli.cpp: In member function 'int32_t Espfc::Connect::Cli::Param::parse(const char*) const':
+.pio\libdeps\native\ArduinoFake\src/arduino/pgmspace.h:64:51: error: 'strcasecmp' was not declared in this scope
+ #define strcasecmp_P(s1, s2) strcasecmp((s1), (s2))
+                                                   ^
+lib\Espfc\src\Connect\Cli.cpp:311:10: note: in expansion of macro 'strcasecmp_P'
+       if(strcasecmp_P(v, choices[i]) == 0) return i;
+          ^~~~~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+lib\Espfc\src\Control\Controller.cpp: In member function 'float 
+Espfc::Control::Controller::applyFeedforwardJitter(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src\Control\Controller.cpp:439:11: note: in expansion of macro 'abs'
+   if(std::abs(delta) > maxDelta)
+           ^~~
+*** [.pio\build\native\lib00b\betaflight\platform_cpp.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\Espfc\src/ModelConfig.h:11,
+                 from lib\Espfc\src\Control\Rates.h:3,
+                 from lib\Espfc\src\Control\Rates.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\Espfc\src\Device\InputCRSF.h:3,
+                 from lib\Espfc\src\Device\InputCRSF.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\Espfc\src\Device\InputSBUS.h:3,
+                 from lib\Espfc\src\Device\InputSBUS.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Connect\Cli.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\Espfc.h:10,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Hal\Gpio.h:3,
+                 from lib\Espfc\src\Hal\Gpio.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Control\Controller.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src\Device/Baro/BaroBMP085.hpp:3,
+                 from lib\Espfc\src\Hardware.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Espfc.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Input.h:3,
+                 from lib\Espfc\src\Input.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Output\Mixer.h:3,
+                 from lib\Espfc\src\Output\Mixer.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+----------------- native:test_gyro [ERRORED] Took 9.66 seconds -----------------
+
+Processing test_input_crsf in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from test\test_input_crsf\test_input_crsf.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from lib\Gps\src/Gps.hpp:3:0,
+                 from test\test_input_crsf\test_input_crsf.cpp:6:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from test\test_input_crsf\test_input_crsf.cpp:6:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\betaflight\src\platform_cpp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+ }};
+  ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+ };
+ ^
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/arduino/WString.h:25:0,
+                 from .pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:224,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+lib\Espfc\src\Connect\Cli.cpp: In member function 'int32_t Espfc::Connect::Cli::Param::parse(const char*) const':
+.pio\libdeps\native\ArduinoFake\src/arduino/pgmspace.h:64:51: error: 'strcasecmp' was not declared in this scope
+ #define strcasecmp_P(s1, s2) strcasecmp((s1), (s2))
+                                                   ^
+lib\Espfc\src\Connect\Cli.cpp:311:10: note: in expansion of macro 'strcasecmp_P'
+       if(strcasecmp_P(v, choices[i]) == 0) return i;
+          ^~~~~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+lib\Espfc\src\Control\Controller.cpp: In member function 'float 
+Espfc::Control::Controller::applyFeedforwardJitter(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src\Control\Controller.cpp:439:11: note: in expansion of macro 'abs'
+   if(std::abs(delta) > maxDelta)
+           ^~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\test\test_input_crsf\test_input_crsf.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\Espfc.h:10,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Rc\Crsf.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib00b\betaflight\platform_cpp.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\SensorManager.h:3,
+                 from lib\Espfc\src\SensorManager.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Connect\Cli.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/AccelSensor.h:5,
+                 from lib\Espfc\src\Sensor\AccelSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Control\Controller.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\Espfc.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Sensor\BaroSensor.hpp:5,
+                 from lib\Espfc\src\Sensor\BaroSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\Espfc\src/ModelConfig.h:11,
+                 from lib\Espfc\src\Sensor\BaseSensor.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from lib\Espfc\src\Sensor\GpsSensor.cpp:2:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::configureGnss()':
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 0, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableGPS, 
+.sigCfgMask = (uint8_t)(useDualBand ? 0x20 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 1, .resTrkCh = 1, .maxTrkCh = 3, .flagsEnable = enableSBAS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 2, .resTrkCh = 4, .maxTrkCh = 8, .flagsEnable = enableGAL, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                    ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 3, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableBDS, 
+.sigCfgMask = (uint8_t)(false ? 0x80 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                               ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 4, .resTrkCh = 0, .maxTrkCh = 8, .flagsEnable = 0, 
+.sigCfgMask = 0x01, .flagsHigh = 0x03});
+                                                                                                                       
+                            ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 5, .resTrkCh = 0, .maxTrkCh = 3, .flagsEnable = enableQZSS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x05});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 6, .resTrkCh = 8, .maxTrkCh = 14, .flagsEnable = enableGLO, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::calculateHomeVector() const':
+lib\Espfc\src\Sensor\GpsSensor.cpp:643:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(lat1, lon1, lat2, lon2);
+              ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: error: 'distance' was not declared in this scope
+   _model.state.gps.distanceToHome = distance;
+                                     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:41,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:8,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:646:38: error: 'bearing' was not declared in this scope
+   _model.state.gps.directionToHome = bearing;
+                                      ^~~~~~~
+*** [.pio\build\native\lib6f5\Espfc\Sensor\GpsSensor.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Sensor\GyroSensor.h:4,
+                 from lib\Espfc\src\Sensor\GyroSensor.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+-------------- native:test_input_crsf [ERRORED] Took 9.37 seconds --------------
+
+Processing test_math in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+In file included from lib\Gps\src/Gps.hpp:3:0,
+                 from test\test_math\test_math.cpp:11:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from test\test_math\test_math.cpp:11:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\betaflight\src\platform_cpp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+ }};
+  ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+ };
+ ^
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+*** [.pio\build\native\test\test_math\test_math.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/arduino/WString.h:25:0,
+                 from .pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:224,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+lib\Espfc\src\Connect\Cli.cpp: In member function 'int32_t Espfc::Connect::Cli::Param::parse(const char*) const':
+.pio\libdeps\native\ArduinoFake\src/arduino/pgmspace.h:64:51: error: 'strcasecmp' was not declared in this scope
+ #define strcasecmp_P(s1, s2) strcasecmp((s1), (s2))
+                                                   ^
+lib\Espfc\src\Connect\Cli.cpp:311:10: note: in expansion of macro 'strcasecmp_P'
+       if(strcasecmp_P(v, choices[i]) == 0) return i;
+          ^~~~~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+lib\Espfc\src\Control\Controller.cpp: In member function 'float 
+Espfc::Control::Controller::applyFeedforwardJitter(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src\Control\Controller.cpp:439:11: note: in expansion of macro 'abs'
+   if(std::abs(delta) > maxDelta)
+           ^~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib00b\betaflight\platform_cpp.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\Espfc.h:10,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from lib\Espfc\src\Sensor\GpsSensor.cpp:2:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::configureGnss()':
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 0, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableGPS, 
+.sigCfgMask = (uint8_t)(useDualBand ? 0x20 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 1, .resTrkCh = 1, .maxTrkCh = 3, .flagsEnable = enableSBAS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 2, .resTrkCh = 4, .maxTrkCh = 8, .flagsEnable = enableGAL, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                    ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 3, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableBDS, 
+.sigCfgMask = (uint8_t)(false ? 0x80 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                               ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 4, .resTrkCh = 0, .maxTrkCh = 8, .flagsEnable = 0, 
+.sigCfgMask = 0x01, .flagsHigh = 0x03});
+                                                                                                                       
+                            ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 5, .resTrkCh = 0, .maxTrkCh = 3, .flagsEnable = enableQZSS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x05});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 6, .resTrkCh = 8, .maxTrkCh = 14, .flagsEnable = enableGLO, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::calculateHomeVector() const':
+lib\Espfc\src\Sensor\GpsSensor.cpp:643:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(lat1, lon1, lat2, lon2);
+              ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: error: 'distance' was not declared in this scope
+   _model.state.gps.distanceToHome = distance;
+                                     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:41,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:8,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:646:38: error: 'bearing' was not declared in this scope
+   _model.state.gps.directionToHome = bearing;
+                                      ^~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Sensor\MagSensor.hpp:5,
+                 from lib\Espfc\src\Sensor\MagSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Connect\Cli.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src\Sensor\VoltageSensor.h:3,
+                 from lib\Espfc\src\Sensor\VoltageSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Control\Controller.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\Espfc.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\SerialManager.h:3,
+                 from lib\Espfc\src\SerialManager.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib6f5\Espfc\Sensor\GpsSensor.o] Error 1
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\SerialManager.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+*** [.pio\build\native\lib6f5\Espfc\SerialManager.o] Error 1
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+----------------- native:test_math [ERRORED] Took 8.99 seconds -----------------
+
+Processing test_msp in native environment
+--------------------------------------------------------------------------------
+Building...
+Warning! Ignore unknown configuration option `serial_port` in section [env:esp32]
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from test\test_msp\test_msp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from lib\Gps\src/Gps.hpp:3:0,
+                 from test\test_msp\test_msp.cpp:10:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from test\test_msp\test_msp.cpp:10:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Device/SerialDevice.h:5,
+                 from lib\betaflight\src\platform_cpp.cpp:2:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+ }};
+  ^
+lib\betaflight\src\platform_cpp.cpp:39:2: sorry, unimplemented: non-trivial designated initializers not supported
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+ };
+ ^
+lib\betaflight\src\platform_cpp.cpp:44:1: sorry, unimplemented: non-trivial designated initializers not supported
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\test\test_msp\test_msp.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/arduino/WString.h:25:0,
+                 from .pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:224,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Connect/Cli.hpp:3,
+                 from lib\Espfc\src\Connect\Cli.cpp:1:
+lib\Espfc\src\Connect\Cli.cpp: In member function 'int32_t Espfc::Connect::Cli::Param::parse(const char*) const':
+.pio\libdeps\native\ArduinoFake\src/arduino/pgmspace.h:64:51: error: 'strcasecmp' was not declared in this scope
+ #define strcasecmp_P(s1, s2) strcasecmp((s1), (s2))
+                                                   ^
+lib\Espfc\src\Connect\Cli.cpp:311:10: note: in expansion of macro 'strcasecmp_P'
+       if(strcasecmp_P(v, choices[i]) == 0) return i;
+          ^~~~~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Control/Altitude.hpp:5,
+                 from lib\Espfc\src/Control/Controller.h:3,
+                 from lib\Espfc\src\Control\Controller.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+lib\Espfc\src\Control\Controller.cpp: In member function 'float 
+Espfc::Control::Controller::applyFeedforwardJitter(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src\Control\Controller.cpp:439:11: note: in expansion of macro 'abs'
+   if(std::abs(delta) > maxDelta)
+           ^~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:14:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\Espfc.h:3,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Espfc\src/Control/HorizonMode.hpp: In member function 'float Espfc::Control::HorizonMode::update(int, float, 
+float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:25:48: note: in expansion of macro 'abs'
+     const float stickMagnitude = std::max(std::abs(_model.state.input.ch[AXIS_ROLL]),
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:26:48: note: in expansion of macro 'abs'
+                                           std::abs(_model.state.input.ch[AXIS_PITCH]));
+                                                ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:35:46: note: in expansion of macro 'abs'
+     const float currentAngle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                              ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/HorizonMode.hpp:36:47: note: in expansion of macro 'abs'
+                                          std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                               ^~~
+lib\Espfc\src/Control/LaunchControl.hpp: In member function 'int Espfc::Control::LaunchControl::update()':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:35:35: note: in expansion of macro 'abs'
+       float angle = std::max(std::abs(_model.state.attitude.euler[AXIS_ROLL]),
+                                   ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:36:36: note: in expansion of macro 'abs'
+                               std::abs(_model.state.attitude.euler[AXIS_PITCH]));
+                                    ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/LaunchControl.hpp:85:21: note: in expansion of macro 'abs'
+             if(std::abs(_model.state.attitude.euler[i]) > angleLimitRad)
+                     ^~~
+lib\Espfc\src/Control/AcroTrainer.hpp: In member function 'float Espfc::Control::AcroTrainer::update(int, float)':
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:36:13: note: in expansion of macro 'abs'
+     if(std::abs(currentAngle) > angleLimitRad * 0.8f)
+             ^~~
+.pio\libdeps\native\ArduinoFake\src/arduino/Arduino.h:96:16: error: expected unqualified-id before '(' token
+ #define abs(x) ((x)>0?(x):-(x))
+                ^
+lib\Espfc\src/Control/AcroTrainer.hpp:39:37: note: in expansion of macro 'abs'
+       const float overshoot = (std::abs(currentAngle) - angleLimitRad * 0.8f) / (angleLimitRad * 0.2f);
+                                     ^~~
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\Espfc.h:10,
+                 from lib\Espfc\src\Espfc.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+*** [.pio\build\native\lib00b\betaflight\platform_cpp.o] Error 1
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+In file included from lib\Espfc\src\Sensor\GpsSensor.cpp:2:0:
+lib\Gps\src/Gps.hpp: In function 'std::tuple<float, float> Gps::calculateDistanceAndBearing(int32_t, int32_t, int32_t, 
+int32_t)':
+lib\Gps\src/Gps.hpp:33:81: error: 'M_PI' was not declared in this scope
+   const float dlon = (float)dlon_raw * LAT_TO_M * cosf(homeLat * 1e-7f * (float)M_PI / 180.0f);
+                                                                                 ^~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::configureGnss()':
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 0, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableGPS, 
+.sigCfgMask = (uint8_t)(useDualBand ? 0x20 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:549:188: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 1, .resTrkCh = 1, .maxTrkCh = 3, .flagsEnable = enableSBAS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:553:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 2, .resTrkCh = 4, .maxTrkCh = 8, .flagsEnable = enableGAL, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                    ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:557:155: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 3, .resTrkCh = 8, .maxTrkCh = 16, .flagsEnable = enableBDS, 
+.sigCfgMask = (uint8_t)(false ? 0x80 : 0x01), .flagsHigh = 0x01});
+                                                                                                                       
+                                                               ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:561:182: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 4, .resTrkCh = 0, .maxTrkCh = 8, .flagsEnable = 0, 
+.sigCfgMask = 0x01, .flagsHigh = 0x03});
+                                                                                                                       
+                            ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:565:147: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 5, .resTrkCh = 0, .maxTrkCh = 3, .flagsEnable = enableQZSS, 
+.sigCfgMask = 0x01, .flagsHigh = 0x05});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:569:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+       written += req.write(Gps::UbxCfgGnssBlock{.gnssId = 6, .resTrkCh = 8, .maxTrkCh = 14, .flagsEnable = enableGLO, 
+.sigCfgMask = 0x01, .flagsHigh = 0x01});
+                                                                                                                       
+                                     ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp:573:156: sorry, unimplemented: non-trivial designated initializers not supported
+lib\Espfc\src\Sensor\GpsSensor.cpp: In member function 'void Espfc::Sensor::GpsSensor::calculateHomeVector() const':
+lib\Espfc\src\Sensor\GpsSensor.cpp:643:14: error: expected unqualified-id before '[' token
+   const auto [distance, bearing] = Gps::calculateDistanceAndBearing(lat1, lon1, lat2, lon2);
+              ^
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: error: 'distance' was not declared in this scope
+   _model.state.gps.distanceToHome = distance;
+                                     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:645:37: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:41,
+                 from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:8,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src/Debug_Espfc.h:4,
+                 from lib\Espfc\src/Model.h:7,
+                 from lib\Espfc\src/Sensor/GpsSensor.hpp:3,
+                 from lib\Espfc\src\Sensor\GpsSensor.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:135:5: note:   'std::distance'
+     distance(_InputIterator __first, _InputIterator __last)
+     ^~~~~~~~
+lib\Espfc\src\Sensor\GpsSensor.cpp:646:38: error: 'bearing' was not declared in this scope
+   _model.state.gps.directionToHome = bearing;
+                                      ^~~~~~~
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\SerialManager.h:3,
+                 from lib\Espfc\src\SerialManager.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+In file included from lib\Gps\src/GpsParser.hpp:3:0,
+                 from lib\Espfc\src\Sensor/GpsSensor.hpp:6,
+                 from lib\Espfc\src\SerialManager.h:10,
+                 from lib\Espfc\src\SerialManager.cpp:1:
+lib\Gps\src/GpsProtocol.hpp: In constructor 'constexpr Gps::UbxCfgValsetItem<K, T>::UbxCfgValsetItem(T)':
+lib\Gps\src/GpsProtocol.hpp:413:8: error: expected '(' before 'constexpr'
+     if constexpr (size == 1 || size == 2) {
+        ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:415:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 3) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:415:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 3) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:417:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 4) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:417:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 4) {
+               ^~~~~~~~~
+lib\Gps\src/GpsProtocol.hpp:419:7: error: 'else' without a previous 'if'
+     } else if constexpr (size == 5) {
+       ^~~~
+lib\Gps\src/GpsProtocol.hpp:419:15: error: expected '(' before 'constexpr'
+     } else if constexpr (size == 5) {
+               ^~~~~~~~~
+*** [.pio\build\native\lib6f5\Espfc\Connect\Cli.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\Control\Controller.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\Espfc.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\Sensor\GpsSensor.o] Error 1
+*** [.pio\build\native\lib6f5\Espfc\SerialManager.o] Error 1
+In file included from .pio\libdeps\native\ArduinoFake\src/ArduinoFake.h:12:0,
+                 from .pio\libdeps\native\ArduinoFake\src/Arduino.h:1,
+                 from lib\Espfc\src\Debug_Espfc.h:4,
+                 from lib\Espfc\src\Model.h:7,
+                 from lib\Espfc\src\TelemetryManager.h:3,
+                 from lib\Espfc\src\TelemetryManager.cpp:1:
+.pio\libdeps\native\ArduinoFake\src/fakeit.hpp:5366:29: warning: 'no_sanitize' attribute directive ignored 
+[-Wattributes]
+         getDestructorOffset() {
+                             ^
+Building stage has failed, see errors above. Use `pio test -vvv` option to enable verbose output.
+----------------- native:test_msp [ERRORED] Took 9.58 seconds -----------------
+
+=================================== SUMMARY ===================================
+Environment    Test             Status    Duration
+-------------  ---------------  --------  ------------
+native         test_ahrs        PASSED    00:00:05.026
+native         test_esc         PASSED    00:00:05.665
+native         test_fc          ERRORED   00:00:10.561
+native         test_gps         ERRORED   00:00:02.373
+native         test_gyro        ERRORED   00:00:09.656
+native         test_input_crsf  ERRORED   00:00:09.369
+native         test_math        ERRORED   00:00:08.988
+native         test_msp         ERRORED   00:00:09.578
+================= 49 test cases: 43 succeeded in 00:01:01.216 =================
